@@ -19,10 +19,9 @@ class MotionRecognizer(Node):
         self.bridge = CvBridge()
         self.previous_frame = None
         self.current_frame = None
-        self.kernel = np.ones((5, 5))
+        self.kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
 
     def _check_motion(self, img):
-        # TODO: implement algorithm here
         if self.previous_frame is None:
             self.previous_frame = img
             self.current_frame = img
@@ -33,10 +32,12 @@ class MotionRecognizer(Node):
         diff_frame = cv2.absdiff(self.previous_frame, self.current_frame)
         diff_gray = cv2.cvtColor(diff_frame, cv2.COLOR_BGR2GRAY)
         diff_blur = cv2.GaussianBlur(diff_gray, (5, 5), 0)
-        diff_dilated = cv2.dilate(diff_blur, self.kernel, 1)
-        thresh_frame = cv2.threshold(diff_dilated, thresh=20, maxval=255, type=cv2.THRESH_BINARY)[1]
+        thresh_frame = cv2.adaptiveThreshold(diff_blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 27, 6)
 
-        contours, hierarchy = cv2.findContours(thresh_frame, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        close = cv2.morphologyEx(thresh_frame, cv2.MORPH_CLOSE, self.kernel, iterations=1)
+        dilate = cv2.dilate(close, self.kernel, iterations=2)
+
+        contours, hierarchy = cv2.findContours(dilate, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
         if len(contours) > 0:
             self.get_logger().info('1')
@@ -60,7 +61,7 @@ def main(args=None):
     rclpy.spin(convert_node)
     print("Spin")
     convert_node.destroy_node()
-    print("Destroied")
+    print("Destroyed")
     rclpy.shutdown()
 
 
