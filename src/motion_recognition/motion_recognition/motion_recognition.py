@@ -1,4 +1,3 @@
-from sys import _current_frames
 import rclpy
 from rclpy.node import Node
 
@@ -80,6 +79,7 @@ class MotionRecognizer(Node):
         motion_flag, detected_img = self._check_motion(img_from_cam)
         int_msg = Int8()
         int_msg.data = int(motion_flag)
+        self.int_publisher.publish(int_msg)
 
         img_msg = self.bridge.cv2_to_imgmsg(detected_img, "bgr8")
         img_msg.header = msg.header
