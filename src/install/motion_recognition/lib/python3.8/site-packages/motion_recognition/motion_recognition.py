@@ -1,4 +1,3 @@
-from sys import _current_frames
 import rclpy
 from rclpy.node import Node
 
@@ -22,7 +21,6 @@ class MotionRecognizer(Node):
         self.kernel = np.ones((5, 5))
 
     def _check_motion(self, img):
-        # TODO: implement algorithm here
         if self.previous_frame is None:
             self.previous_frame = img
             self.current_frame = img
@@ -60,7 +58,7 @@ def main(args=None):
     rclpy.spin(convert_node)
     print("Spin")
     convert_node.destroy_node()
-    print("Destroied")
+    print("Destroyed")
     rclpy.shutdown()
 
 
