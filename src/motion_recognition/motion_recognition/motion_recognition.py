@@ -65,8 +65,6 @@ class MotionRecognizer(Node):
                 if cv2.contourArea(contour) > 300:
                     cv2.rectangle(self.current_frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-            self.publisher_2.publish()
-
             self.previous_frame = self.current_frame
             self.counter.reset()
         else:

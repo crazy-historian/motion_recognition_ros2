@@ -45,7 +45,6 @@ class MotionRecognizer(Node):
             return 0
 
         if self.counter.is_finished():
-            # diff_frame = cv2.absdiff(self.previous_frame, self.current_frame)
             diff_frame = cv2.absdiff(self.current_frame, self.previous_frame)
             diff_gray = cv2.cvtColor(diff_frame, cv2.COLOR_BGR2GRAY)
             diff_blur = cv2.GaussianBlur(diff_gray, (5, 5), 0)
@@ -61,6 +60,11 @@ class MotionRecognizer(Node):
                 self.last_result = 0
                 self.get_logger().info('0')
 
+            for contour in contours:
+                x, y, w, h = cv2.boundingRect(contour)
+                if cv2.contourArea(contour) > 300:
+                    cv2.rectangle(self.current_frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+
             self.previous_frame = self.current_frame
             self.counter.reset()
         else:
@@ -74,7 +78,6 @@ class MotionRecognizer(Node):
         motion_flag = self._check_motion(img_from_cam)
         msg = Int8()
         msg.data = int(motion_flag)
-        self.publisher.publish(msg)
 
 
 def main(args=None):
