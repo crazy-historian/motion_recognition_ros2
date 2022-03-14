@@ -44,6 +44,7 @@ class MotionRecognizer(Node):
             self.get_logger().info('0')
             return 0, self.previous_frame
 
+        # TODO: replaced to list of frames
         frame_with_rectangle = self.previous_frame
         if self.counter.is_finished():
             diff_frame = cv2.absdiff(self.current_frame, self.previous_frame)
