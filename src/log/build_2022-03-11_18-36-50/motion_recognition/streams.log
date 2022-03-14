@@ -1,0 +1,39 @@
+[0.405s] Invoking command in '/src/motion_recognition': PYTHONPATH=/src/install/motion_recognition/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/motion_recognition build --build-base /src/build/motion_recognition/build install --prefix /src/install/motion_recognition --record /src/build/motion_recognition/install.log --single-version-externally-managed
+[0.560s] running egg_info
+[0.561s] creating ../build/motion_recognition/motion_recognition.egg-info
+[0.561s] writing ../build/motion_recognition/motion_recognition.egg-info/PKG-INFO
+[0.561s] writing dependency_links to ../build/motion_recognition/motion_recognition.egg-info/dependency_links.txt
+[0.561s] writing entry points to ../build/motion_recognition/motion_recognition.egg-info/entry_points.txt
+[0.561s] writing requirements to ../build/motion_recognition/motion_recognition.egg-info/requires.txt
+[0.561s] writing top-level names to ../build/motion_recognition/motion_recognition.egg-info/top_level.txt
+[0.562s] writing manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'
+[0.585s] reading manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'
+[0.585s] writing manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'
+[0.586s] running build
+[0.586s] running build_py
+[0.586s] creating /src/build/motion_recognition/build
+[0.586s] creating /src/build/motion_recognition/build/lib
+[0.586s] creating /src/build/motion_recognition/build/lib/motion_recognition
+[0.586s] copying motion_recognition/__init__.py -> /src/build/motion_recognition/build/lib/motion_recognition
+[0.586s] copying motion_recognition/motion_recognition.py -> /src/build/motion_recognition/build/lib/motion_recognition
+[0.586s] running install
+[0.586s] running install_lib
+[0.587s] creating /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition
+[0.587s] copying /src/build/motion_recognition/build/lib/motion_recognition/__init__.py -> /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition
+[0.587s] copying /src/build/motion_recognition/build/lib/motion_recognition/motion_recognition.py -> /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition
+[0.587s] byte-compiling /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition/__init__.py to __init__.cpython-38.pyc
+[0.588s] byte-compiling /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition/motion_recognition.py to motion_recognition.cpython-38.pyc
+[0.588s] running install_data
+[0.589s] creating /src/install/motion_recognition/share/ament_index
+[0.589s] creating /src/install/motion_recognition/share/ament_index/resource_index
+[0.589s] creating /src/install/motion_recognition/share/ament_index/resource_index/packages
+[0.589s] copying resource/motion_recognition -> /src/install/motion_recognition/share/ament_index/resource_index/packages
+[0.589s] copying package.xml -> /src/install/motion_recognition/share/motion_recognition
+[0.589s] creating /src/install/motion_recognition/share/motion_recognition/launch
+[0.589s] copying launch/motion_recognition.launch.py -> /src/install/motion_recognition/share/motion_recognition/launch
+[0.589s] running install_egg_info
+[0.590s] Copying ../build/motion_recognition/motion_recognition.egg-info to /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition-0.0.0-py3.8.egg-info
+[0.590s] running install_scripts
+[0.601s] Installing motion_recognition script to /src/install/motion_recognition/lib/motion_recognition
+[0.601s] writing list of installed files to '/src/build/motion_recognition/install.log'
+[0.615s] Invoked command in '/src/motion_recognition' returned '0': PYTHONPATH=/src/install/motion_recognition/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/motion_recognition build --build-base /src/build/motion_recognition/build install --prefix /src/install/motion_recognition --record /src/build/motion_recognition/install.log --single-version-externally-managed

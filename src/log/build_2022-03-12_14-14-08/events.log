@@ -1,0 +1,32 @@
+[0.000000] (-) TimerEvent: {}
+[0.000514] (motion_recognition) JobQueued: {'identifier': 'motion_recognition', 'dependencies': OrderedDict()}
+[0.000592] (motion_recognition) JobStarted: {'identifier': 'motion_recognition'}
+[0.099756] (-) TimerEvent: {}
+[0.200108] (-) TimerEvent: {}
+[0.300429] (-) TimerEvent: {}
+[0.400679] (-) TimerEvent: {}
+[0.415997] (motion_recognition) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/motion_recognition', 'build', '--build-base', '/src/build/motion_recognition/build', 'install', '--prefix', '/src/install/motion_recognition', '--record', '/src/build/motion_recognition/install.log', '--single-version-externally-managed'], 'cwd': '/src/motion_recognition', 'env': {'HOSTNAME': '813fe8368549', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'galactic', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'PWD': '/src/build/motion_recognition', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/src/install/motion_recognition/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[0.500809] (-) TimerEvent: {}
+[0.564829] (motion_recognition) StdoutLine: {'line': b'running egg_info\n'}
+[0.565146] (motion_recognition) StdoutLine: {'line': b'writing ../build/motion_recognition/motion_recognition.egg-info/PKG-INFO\n'}
+[0.565281] (motion_recognition) StdoutLine: {'line': b'writing dependency_links to ../build/motion_recognition/motion_recognition.egg-info/dependency_links.txt\n'}
+[0.565454] (motion_recognition) StdoutLine: {'line': b'writing entry points to ../build/motion_recognition/motion_recognition.egg-info/entry_points.txt\n'}
+[0.565576] (motion_recognition) StdoutLine: {'line': b'writing requirements to ../build/motion_recognition/motion_recognition.egg-info/requires.txt\n'}
+[0.565683] (motion_recognition) StdoutLine: {'line': b'writing top-level names to ../build/motion_recognition/motion_recognition.egg-info/top_level.txt\n'}
+[0.589854] (motion_recognition) StdoutLine: {'line': b"reading manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'\n"}
+[0.590361] (motion_recognition) StdoutLine: {'line': b"writing manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'\n"}
+[0.590479] (motion_recognition) StdoutLine: {'line': b'running build\n'}
+[0.590564] (motion_recognition) StdoutLine: {'line': b'running build_py\n'}
+[0.590667] (motion_recognition) StdoutLine: {'line': b'running install\n'}
+[0.591261] (motion_recognition) StdoutLine: {'line': b'running install_lib\n'}
+[0.592409] (motion_recognition) StdoutLine: {'line': b'running install_data\n'}
+[0.592786] (motion_recognition) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.594163] (motion_recognition) StdoutLine: {'line': b"removing '/src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[0.594408] (motion_recognition) StdoutLine: {'line': b'Copying ../build/motion_recognition/motion_recognition.egg-info to /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition-0.0.0-py3.8.egg-info\n'}
+[0.594963] (motion_recognition) StdoutLine: {'line': b'running install_scripts\n'}
+[0.600878] (-) TimerEvent: {}
+[0.605359] (motion_recognition) StdoutLine: {'line': b'Installing motion_recognition script to /src/install/motion_recognition/lib/motion_recognition\n'}
+[0.605546] (motion_recognition) StdoutLine: {'line': b"writing list of installed files to '/src/build/motion_recognition/install.log'\n"}
+[0.618255] (motion_recognition) CommandEnded: {'returncode': 0}
+[0.629499] (motion_recognition) JobEnded: {'identifier': 'motion_recognition', 'rc': 0}
+[0.630013] (-) EventReactorShutdown: {}

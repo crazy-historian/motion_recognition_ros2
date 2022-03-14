@@ -1,0 +1,21 @@
+[0.472s] Invoking command in '/src/motion_recognition': PYTHONPATH=/src/install/motion_recognition/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/motion_recognition build --build-base /src/build/motion_recognition/build install --prefix /src/install/motion_recognition --record /src/build/motion_recognition/install.log --single-version-externally-managed
+[0.607s] running egg_info
+[0.607s] writing ../build/motion_recognition/motion_recognition.egg-info/PKG-INFO
+[0.608s] writing dependency_links to ../build/motion_recognition/motion_recognition.egg-info/dependency_links.txt
+[0.608s] writing entry points to ../build/motion_recognition/motion_recognition.egg-info/entry_points.txt
+[0.608s] writing requirements to ../build/motion_recognition/motion_recognition.egg-info/requires.txt
+[0.608s] writing top-level names to ../build/motion_recognition/motion_recognition.egg-info/top_level.txt
+[0.635s] reading manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'
+[0.636s] writing manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'
+[0.636s] running build
+[0.636s] running build_py
+[0.636s] running install
+[0.637s] running install_lib
+[0.638s] running install_data
+[0.638s] running install_egg_info
+[0.639s] removing '/src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition-0.0.0-py3.8.egg-info' (and everything under it)
+[0.640s] Copying ../build/motion_recognition/motion_recognition.egg-info to /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition-0.0.0-py3.8.egg-info
+[0.640s] running install_scripts
+[0.651s] Installing motion_recognition script to /src/install/motion_recognition/lib/motion_recognition
+[0.651s] writing list of installed files to '/src/build/motion_recognition/install.log'
+[0.664s] Invoked command in '/src/motion_recognition' returned '0': PYTHONPATH=/src/install/motion_recognition/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/motion_recognition build --build-base /src/build/motion_recognition/build install --prefix /src/install/motion_recognition --record /src/build/motion_recognition/install.log --single-version-externally-managed

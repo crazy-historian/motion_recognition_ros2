@@ -1,0 +1,22 @@
+running egg_info
+writing ../build/motion_recognition/motion_recognition.egg-info/PKG-INFO
+writing dependency_links to ../build/motion_recognition/motion_recognition.egg-info/dependency_links.txt
+writing entry points to ../build/motion_recognition/motion_recognition.egg-info/entry_points.txt
+writing requirements to ../build/motion_recognition/motion_recognition.egg-info/requires.txt
+writing top-level names to ../build/motion_recognition/motion_recognition.egg-info/top_level.txt
+reading manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'
+writing manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'
+running build
+running build_py
+copying motion_recognition/motion_recognition.py -> /src/build/motion_recognition/build/lib/motion_recognition
+running install
+running install_lib
+copying /src/build/motion_recognition/build/lib/motion_recognition/motion_recognition.py -> /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition
+byte-compiling /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition/motion_recognition.py to motion_recognition.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../build/motion_recognition/motion_recognition.egg-info to /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition-0.0.0-py3.8.egg-info
+running install_scripts
+Installing motion_recognition script to /src/install/motion_recognition/lib/motion_recognition
+writing list of installed files to '/src/build/motion_recognition/install.log'

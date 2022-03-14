@@ -1,0 +1,3 @@
+[console_scripts]
+motion_recognition = motion_recognition.motion_recognition:main
+

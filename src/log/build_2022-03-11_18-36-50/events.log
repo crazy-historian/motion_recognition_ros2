@@ -1,0 +1,50 @@
+[0.000000] (-) TimerEvent: {}
+[0.000645] (motion_recognition) JobQueued: {'identifier': 'motion_recognition', 'dependencies': OrderedDict()}
+[0.000714] (motion_recognition) JobStarted: {'identifier': 'motion_recognition'}
+[0.099834] (-) TimerEvent: {}
+[0.200203] (-) TimerEvent: {}
+[0.300536] (-) TimerEvent: {}
+[0.400778] (-) TimerEvent: {}
+[0.405415] (motion_recognition) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/motion_recognition', 'build', '--build-base', '/src/build/motion_recognition/build', 'install', '--prefix', '/src/install/motion_recognition', '--record', '/src/build/motion_recognition/install.log', '--single-version-externally-managed'], 'cwd': '/src/motion_recognition', 'env': {'HOSTNAME': 'ada717c3b75e', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'galactic', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'PWD': '/src/build/motion_recognition', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/src/install/motion_recognition/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1'}, 'shell': False}
+[0.500883] (-) TimerEvent: {}
+[0.561573] (motion_recognition) StdoutLine: {'line': b'running egg_info\n'}
+[0.561875] (motion_recognition) StdoutLine: {'line': b'creating ../build/motion_recognition/motion_recognition.egg-info\n'}
+[0.561995] (motion_recognition) StdoutLine: {'line': b'writing ../build/motion_recognition/motion_recognition.egg-info/PKG-INFO\n'}
+[0.562192] (motion_recognition) StdoutLine: {'line': b'writing dependency_links to ../build/motion_recognition/motion_recognition.egg-info/dependency_links.txt\n'}
+[0.562299] (motion_recognition) StdoutLine: {'line': b'writing entry points to ../build/motion_recognition/motion_recognition.egg-info/entry_points.txt\n'}
+[0.562402] (motion_recognition) StdoutLine: {'line': b'writing requirements to ../build/motion_recognition/motion_recognition.egg-info/requires.txt\n'}
+[0.562494] (motion_recognition) StdoutLine: {'line': b'writing top-level names to ../build/motion_recognition/motion_recognition.egg-info/top_level.txt\n'}
+[0.563254] (motion_recognition) StdoutLine: {'line': b"writing manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'\n"}
+[0.586270] (motion_recognition) StdoutLine: {'line': b"reading manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'\n"}
+[0.586669] (motion_recognition) StdoutLine: {'line': b"writing manifest file '../build/motion_recognition/motion_recognition.egg-info/SOURCES.txt'\n"}
+[0.586787] (motion_recognition) StdoutLine: {'line': b'running build\n'}
+[0.586898] (motion_recognition) StdoutLine: {'line': b'running build_py\n'}
+[0.587022] (motion_recognition) StdoutLine: {'line': b'creating /src/build/motion_recognition/build\n'}
+[0.587115] (motion_recognition) StdoutLine: {'line': b'creating /src/build/motion_recognition/build/lib\n'}
+[0.587193] (motion_recognition) StdoutLine: {'line': b'creating /src/build/motion_recognition/build/lib/motion_recognition\n'}
+[0.587268] (motion_recognition) StdoutLine: {'line': b'copying motion_recognition/__init__.py -> /src/build/motion_recognition/build/lib/motion_recognition\n'}
+[0.587344] (motion_recognition) StdoutLine: {'line': b'copying motion_recognition/motion_recognition.py -> /src/build/motion_recognition/build/lib/motion_recognition\n'}
+[0.587432] (motion_recognition) StdoutLine: {'line': b'running install\n'}
+[0.587527] (motion_recognition) StdoutLine: {'line': b'running install_lib\n'}
+[0.588044] (motion_recognition) StdoutLine: {'line': b'creating /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition\n'}
+[0.588180] (motion_recognition) StdoutLine: {'line': b'copying /src/build/motion_recognition/build/lib/motion_recognition/__init__.py -> /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition\n'}
+[0.588270] (motion_recognition) StdoutLine: {'line': b'copying /src/build/motion_recognition/build/lib/motion_recognition/motion_recognition.py -> /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition\n'}
+[0.588407] (motion_recognition) StdoutLine: {'line': b'byte-compiling /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition/__init__.py to __init__.cpython-38.pyc\n'}
+[0.589136] (motion_recognition) StdoutLine: {'line': b'byte-compiling /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition/motion_recognition.py to motion_recognition.cpython-38.pyc\n'}
+[0.589479] (motion_recognition) StdoutLine: {'line': b'running install_data\n'}
+[0.589805] (motion_recognition) StdoutLine: {'line': b'creating /src/install/motion_recognition/share/ament_index\n'}
+[0.589905] (motion_recognition) StdoutLine: {'line': b'creating /src/install/motion_recognition/share/ament_index/resource_index\n'}
+[0.589998] (motion_recognition) StdoutLine: {'line': b'creating /src/install/motion_recognition/share/ament_index/resource_index/packages\n'}
+[0.590132] (motion_recognition) StdoutLine: {'line': b'copying resource/motion_recognition -> /src/install/motion_recognition/share/ament_index/resource_index/packages\n'}
+[0.590220] (motion_recognition) StdoutLine: {'line': b'copying package.xml -> /src/install/motion_recognition/share/motion_recognition\n'}
+[0.590306] (motion_recognition) StdoutLine: {'line': b'creating /src/install/motion_recognition/share/motion_recognition/launch\n'}
+[0.590393] (motion_recognition) StdoutLine: {'line': b'copying launch/motion_recognition.launch.py -> /src/install/motion_recognition/share/motion_recognition/launch\n'}
+[0.590492] (motion_recognition) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.590883] (motion_recognition) StdoutLine: {'line': b'Copying ../build/motion_recognition/motion_recognition.egg-info to /src/install/motion_recognition/lib/python3.8/site-packages/motion_recognition-0.0.0-py3.8.egg-info\n'}
+[0.591424] (motion_recognition) StdoutLine: {'line': b'running install_scripts\n'}
+[0.600949] (-) TimerEvent: {}
+[0.602191] (motion_recognition) StdoutLine: {'line': b'Installing motion_recognition script to /src/install/motion_recognition/lib/motion_recognition\n'}
+[0.602583] (motion_recognition) StdoutLine: {'line': b"writing list of installed files to '/src/build/motion_recognition/install.log'\n"}
+[0.615857] (motion_recognition) CommandEnded: {'returncode': 0}
+[0.629188] (motion_recognition) JobEnded: {'identifier': 'motion_recognition', 'rc': 0}
+[0.629864] (-) EventReactorShutdown: {}
