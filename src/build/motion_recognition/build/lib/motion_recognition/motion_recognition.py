@@ -26,7 +26,7 @@ class Counter:
 
 
 class MotionRecognizer(Node):
-    def __init__(self, frames_delay: int = 5):
+    def __init__(self, frames_delay: int = 10):
         super().__init__("convert_node")
         self.get_logger().info("Starting work")
         self.subscriber = self.create_subscription(Image, "/image_raw", self.listener_callback, 10)
@@ -63,7 +63,7 @@ class MotionRecognizer(Node):
             for contour in contours:
                 x, y, w, h = cv2.boundingRect(contour)
                 if cv2.contourArea(contour) > 300:
-                    cv2.rectangle(self.current_frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+                    cv2.rectangle(self.previous_frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
             self.previous_frame = self.current_frame
             self.counter.reset()
@@ -87,7 +87,7 @@ def main(args=None):
     rclpy.spin(convert_node)
     print("Spin")
     convert_node.destroy_node()
-    print("Destroied")
+    print("Destroyed")
     rclpy.shutdown()
 
 
